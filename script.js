@@ -72,3 +72,8 @@ $("#saveBtn4").on("click", function () {
 var LSinput4 = localStorage.getItem("input4");
 $("#event4").text(LSinput4);
 
+//clears all events but doesnt save on refresh, on refresh events previously saved reappear
+$("#clearBtn").on("click", function(){
+    $("textarea").empty();
+});
+
